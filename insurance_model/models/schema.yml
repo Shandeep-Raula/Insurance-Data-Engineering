@@ -19,3 +19,12 @@ models:
         data_tests:
           - unique
           - not_null
+sources:
+  - name: RAW
+    database: INSURANCE
+    schema: RAW
+    tables:
+      - name: CLAIMS
+        description: "Raw claims data from source system"
+      - name: CUSTOMERS
+        description: "Raw customers data from source system"
